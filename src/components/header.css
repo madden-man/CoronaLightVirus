@@ -3,12 +3,12 @@
   flex-direction: row;
   width: 100%;
   align-items: center;
-  background-color: white;
+  background-color: slategray;
 }
 
 .header a {
   text-decoration: none;
-  font-family: 'VT323', cursive;
+  font-family: 'VT323';
   font-size: x-large;
-  color: #0BD900;
+  color: #00FF00;
 }
