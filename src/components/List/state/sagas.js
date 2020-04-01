@@ -6,7 +6,7 @@ import actionTypes from './actionTypes';
 import runSagas from '../../../config/rootSaga';
 
 export function storeSuggestionInMongo(action) {
-  const socket = socketIOClient('http://localhost:8080');
+  const socket = socketIOClient('http://192.168.20.205:8080');
 
   socket.emit('new_suggestion', action.payload);
 }
