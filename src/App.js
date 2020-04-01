@@ -8,6 +8,8 @@ import Home from './views/Home';
 import Todo from './views/Todo';
 import Header from './components/Header';
 
+import './App.css';
+
 export const App = () =>
   <Provider store={configureStore()}>
     <Router id="app">

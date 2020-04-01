@@ -1,0 +1,17 @@
+{
+  "name": "corona-light-virus-server",
+  "version": "0.0.1",
+  "description": "Connects via websocket in order to show updates to suggestions list as they occur",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "concurrently": "^5.0.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.4.1",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "start": "concurrently --names 'DATABASE, APP' --prefix-colors 'yellow,green' --kill-others npm:start-mongo npm:start-app",
+    "start-mongo": "mongod -dbpath ~/dev/play/corona-light-virus/server/database",
+    "start-app": "node App.js"
+  }
+}
