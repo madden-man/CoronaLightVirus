@@ -7,7 +7,7 @@ import Column from '../components/List/Column';
 
 export const Todo = ({ getSuggestions }) => {
   useEffect(() => {
-    const socket = socketIOClient('http://192.168.20.205:8080');
+    const socket = socketIOClient('ws://192.168.20.205:8080');
 
     socket.emit('initial_data', {}, (suggestions) => getSuggestions(suggestions));
   }, [getSuggestions]);
